@@ -1,12 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./src/output.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-[Poppins,sans-serif] bg-slate-100">
+    <header
+      class="flex justify-between items-center px-10 py-3 bg-white shadow-md"
+    >
+      <h1 class="font-bold text-3xl">
+        Food<span class="text-amber-500">.</span>
+      </h1>
+      <nav class="hidden md:flex">
+        <a href="#">Home</a>
+        <a href="#">Tentang Kami</a>
+        <a href="#">Menu</a>
+        <a href="#">Layanan</a>
+      </nav>
+      <div class="flex gap-3">
+        <img src="./src/assets/user-image.svg" alt="user image" class="w-10" />
+        <button class="btn">
+          <a href="#">Pesan Now</a>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="flex flex-col-reverse gap-10 items-center my-10 px-3">
+        <div>
+          <h1 class="text-3xl font-bold text-slate-900">
+            Lorem ipsum dolor sit amet.
+          </h1>
+          <p class="text-sm text-slate-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            explicabo repudiandae ipsam consectetur sed nostrum iste architecto
+            adipisci, possimus similique perspiciatis a sequi molestias, et
+            beatae minus ratione dolorum esse.
+          </p>
+        </div>
+        <img
+          src="https://www.svgrepo.com/show/384670/account-avatar-profile-user.svg"
+          alt="user image"
+          class="rounded-full w-3xs"
+        />
+      </section>
+      <section class="px-3">
+        <!-- card container -->
+        <div class="flex flex-col">
+          <!-- card -->
+          <div class="card">
+            <img src="" alt="" />
+            <h2>title food</h2>
+            <button class="btn">Tambah Ke Keranjang</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
