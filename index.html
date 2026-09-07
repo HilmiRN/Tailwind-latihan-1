@@ -14,31 +14,37 @@
   </head>
   <body class="font-[Poppins,sans-serif] bg-slate-100">
     <header
-      class="flex justify-between items-center px-10 py-3 bg-white shadow-md"
+      class="flex justify-between items-center px-10 py-3 bg-white shadow-md md:px-15 md:py-5"
     >
       <h1 class="font-bold text-3xl">
         Food<span class="text-amber-500">.</span>
       </h1>
-      <nav class="hidden md:flex">
+      <nav class="hidden gap-5   text-xl font-medium md:flex">
         <a href="#">Home</a>
         <a href="#">Tentang Kami</a>
         <a href="#">Menu</a>
         <a href="#">Layanan</a>
       </nav>
-      <div class="flex gap-3">
-        <img src="./src/assets/user-image.svg" alt="user image" class="w-10" />
+      <div class="flex gap-3 items-center">
+        <img
+          src="./src/assets/user-image.svg"
+          alt="user image"
+          class="w-10 md:w-15"
+        />
         <button class="btn">
           <a href="#">Pesan Now</a>
         </button>
       </div>
     </header>
-    <main>
-      <section class="flex flex-col-reverse gap-10 items-center my-10 px-3">
-        <div>
-          <h1 class="text-3xl font-bold text-slate-900">
+    <main class="mx-5 md:mx-20">
+      <section
+        class="flex flex-col-reverse gap-10 justify-center items-center my-10 md:flex-row md:my-30 md:gap-20"
+      >
+        <div class="md:w-1/2">
+          <h1 class="text-3xl font-bold text-slate-900 md:text-5xl md:mb-5">
             Lorem ipsum dolor sit amet.
           </h1>
-          <p class="text-sm text-slate-600">
+          <p class="text-sm text-slate-600 md:text-base">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
             explicabo repudiandae ipsam consectetur sed nostrum iste architecto
             adipisci, possimus similique perspiciatis a sequi molestias, et
@@ -48,20 +54,74 @@
         <img
           src="https://www.svgrepo.com/show/384670/account-avatar-profile-user.svg"
           alt="user image"
-          class="rounded-full w-3xs"
+          class="rounded-full w-3xs md:w-1/3"
         />
       </section>
       <section class="px-3">
         <!-- card container -->
-        <div class="flex flex-col">
+        <div
+          class="flex flex-col gap-5 justify-center items-center md:flex-row md:gap-10"
+        >
           <!-- card -->
           <div class="card">
-            <img src="" alt="" />
-            <h2>title food</h2>
-            <button class="btn">Tambah Ke Keranjang</button>
+            <img
+              src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="burger image"
+              class="rounded-lg w-35 h-35 object-cover md:h-auto md:w-full"
+            />
+            <div class="flex flex-col">
+              <h2 class="text-xl font-bold md:text-2xl">Burger</h2>
+              <p class="text-amber-500 font-bold md:text-lg">Rp 5.000</p>
+              <p
+                class="text-sm text-justify mb-2 md:mb-4 md:text-base"
+              >
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+              <button class="btn">Tambah Ke Keranjang</button>
+            </div>
           </div>
+          <!-- card 2 -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="burger image"
+              class="rounded-lg w-35 h-35 object-cover md:h-auto md:w-full"
+            />
+            <div class="flex flex-col">
+              <h2 class="text-xl font-bold md:text-2xl">Burger</h2>
+              <p class="text-amber-500 font-bold md:text-lg">Rp 5.000</p>
+              <p
+                class="text-sm text-justify mb-2 md:mb-4 md:text-base"
+              >
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+              <button class="btn">Tambah Ke Keranjang</button>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="burger image"
+              class="rounded-lg w-35 h-35 object-cover md:h-auto md:w-full"
+            />
+            <div class="flex flex-col">
+              <h2 class="text-xl font-bold md:text-2xl">Burger</h2>
+              <p class="text-amber-500 font-bold md:text-lg">Rp 5.000</p>
+              <p
+                class="text-sm text-justify mb-2 md:mb-4 md:text-base"
+              >
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+              <button class="btn">Tambah Ke Keranjang</button>
+            </div>
+          </div>
+          <!-- section card clear-->
         </div>
       </section>
     </main>
+    <footer class="bg-slate-50 py-7 mt-10 w-full">
+      <p class="text-center">Copyright &copy; 2026 Hilmi</p>
+    </footer>
   </body>
 </html>
