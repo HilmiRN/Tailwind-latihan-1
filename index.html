@@ -16,10 +16,10 @@
     <header
       class="flex justify-between items-center px-10 py-3 bg-white shadow-md md:px-15 md:py-5"
     >
-      <h1 class="font-bold text-3xl">
+      <h1 class="font-bold text-3xl lg:text-4xl">
         Food<span class="text-amber-500">.</span>
       </h1>
-      <nav class="hidden gap-5   text-xl font-medium md:flex">
+      <nav class="hidden gap-5 text-xl font-medium md:flex">
         <a href="#">Home</a>
         <a href="#">Tentang Kami</a>
         <a href="#">Menu</a>
@@ -31,92 +31,138 @@
           alt="user image"
           class="w-10 md:w-15"
         />
-        <button class="btn">
-          <a href="#">Pesan Now</a>
-        </button>
+        <a href="#" class="btn">Pesan Now</a>
       </div>
     </header>
-    <main class="mx-5 md:mx-20">
+    <main class=" mx-5 md:mx-20">
       <section
-        class="flex flex-col-reverse gap-10 justify-center items-center my-10 md:flex-row md:my-30 md:gap-20"
+        class="flex flex-col-reverse gap-8 justify-center items-center my-30 md:flex-row md:my-16 lg:my-24 md:gap-12 lg:gap-20"
       >
-        <div class="md:w-1/2">
-          <h1 class="text-3xl font-bold text-slate-900 md:text-5xl md:mb-5">
-            Lorem ipsum dolor sit amet.
+        <div class="w-full text-center md:w-1/2 md:text-left">
+          <h1
+            class="text-2xl font-extrabold text-slate-900 sm:text-3xl md:text-4xl lg:text-5xl leading-tight md:mb-4"
+          >
+            Nikmati Kelezatan Kuliner Terbaik
           </h1>
-          <p class="text-sm text-slate-600 md:text-base">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            explicabo repudiandae ipsam consectetur sed nostrum iste architecto
-            adipisci, possimus similique perspiciatis a sequi molestias, et
-            beatae minus ratione dolorum esse.
+          <p class="mt-2 text-xs text-slate-600 md:text-base">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
+            libero quam, adipisci minima voluptatum saepe optio ea natus quaerat
+            beatae!
           </p>
         </div>
-        <img
-          src="https://www.svgrepo.com/show/384670/account-avatar-profile-user.svg"
-          alt="user image"
-          class="rounded-full w-3xs md:w-1/3"
-        />
+        <div class="w-full flex justify-center md:w-1/3">
+          <img
+            src="https://www.svgrepo.com/show/384670/account-avatar-profile-user.svg"
+            alt="user avatar"
+            class="rounded-full w-28 md:w-full lg:w-full"
+          />
+        </div>
       </section>
       <section class="px-3">
-        <!-- card container -->
         <div
           class="flex flex-col gap-5 justify-center items-center md:flex-row md:gap-10"
         >
-          <!-- card -->
+          <!-- card 1 -->
           <div class="card">
             <img
-              src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="burger image"
-              class="rounded-lg w-35 h-35 object-cover md:h-auto md:w-full"
+              src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?q=80&w=1115&auto=format&fit=crop"
+              alt="Burger image"
+              class="w-20 h-20 min-w-20 object-cover md:w-full md:h-48 rounded-2xl"
             />
-            <div class="flex flex-col">
-              <h2 class="text-xl font-bold md:text-2xl">Burger</h2>
-              <p class="text-amber-500 font-bold md:text-lg">Rp 5.000</p>
-              <p
-                class="text-sm text-justify mb-2 md:mb-4 md:text-base"
-              >
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              </p>
-              <button class="btn">Tambah Ke Keranjang</button>
+
+            <div
+              class="flex flex-col min-w-0 flex-1 justify-between self-stretch"
+            >
+              <div>
+                <!-- Judul dan Harga dibuat stacked di mobile super kecil agar tidak tabrakan -->
+                <div
+                  class="flex flex-col xs:flex-row xs:justify-between xs:items-baseline md:flex-col md:items-center"
+                >
+                  <h2
+                    class="text-base font-bold text-slate-900 truncate md:text-xl"
+                  >
+                    Burger Beef
+                  </h2>
+                  <p class="text-amber-500 font-bold text-sm md:text-lg">
+                    Rp 25.000
+                  </p>
+                </div>
+                <p
+                  class="text-xs text-slate-500 mt-0.5 mb-2 md:text-sm md:mb-4 md:text-center"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+              <a href="#" class="btn">Tambah ke keranjang</a>
             </div>
           </div>
           <!-- card 2 -->
           <div class="card">
             <img
-              src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="burger image"
-              class="rounded-lg w-35 h-35 object-cover md:h-auto md:w-full"
+              src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?q=80&w=1115&auto=format&fit=crop"
+              alt="Burger image"
+              class="w-20 h-20 min-w-20 object-cover md:w-full md:h-48 rounded-2xl"
             />
-            <div class="flex flex-col">
-              <h2 class="text-xl font-bold md:text-2xl">Burger</h2>
-              <p class="text-amber-500 font-bold md:text-lg">Rp 5.000</p>
-              <p
-                class="text-sm text-justify mb-2 md:mb-4 md:text-base"
-              >
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              </p>
-              <button class="btn">Tambah Ke Keranjang</button>
+
+            <div
+              class="flex flex-col min-w-0 flex-1 justify-between"
+            >
+              <div>
+                <div
+                  class="flex flex-col justify-between md:flex-col md:items-center"
+                >
+                  <h2
+                    class="text-base font-bold text-slate-900 md:text-xl"
+                  >
+                    Burger Beef
+                  </h2>
+                  <p class="text-amber-500 font-bold text-sm md:text-lg">
+                    Rp 25.000
+                  </p>
+                </div>
+                <p
+                  class="text-xs text-slate-500 mt-0.5 mb-2 md:text-sm md:mb-4 md:text-center"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+              <a href="#" class="btn">Tambah ke keranjang</a>
             </div>
           </div>
           <!-- card 3 -->
           <div class="card">
             <img
-              src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="burger image"
-              class="rounded-lg w-35 h-35 object-cover md:h-auto md:w-full"
+              src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?q=80&w=1115&auto=format&fit=crop"
+              alt="Burger image"
+              class="w-20 h-20 min-w-20 object-cover md:w-full md:h-48 rounded-2xl"
             />
-            <div class="flex flex-col">
-              <h2 class="text-xl font-bold md:text-2xl">Burger</h2>
-              <p class="text-amber-500 font-bold md:text-lg">Rp 5.000</p>
-              <p
-                class="text-sm text-justify mb-2 md:mb-4 md:text-base"
-              >
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              </p>
-              <button class="btn">Tambah Ke Keranjang</button>
+
+            <div
+              class="flex flex-col min-w-0 flex-1 justify-between self-stretch"
+            >
+              <div>
+                <!-- Judul dan Harga dibuat stacked di mobile super kecil agar tidak tabrakan -->
+                <div
+                  class="flex flex-col xs:flex-row xs:justify-between xs:items-baseline md:flex-col md:items-center"
+                >
+                  <h2
+                    class="text-base font-bold text-slate-900 truncate md:text-xl"
+                  >
+                    Burger Beef
+                  </h2>
+                  <p class="text-amber-500 font-bold text-sm md:text-lg">
+                    Rp 25.000
+                  </p>
+                </div>
+                <p
+                  class="text-xs text-slate-500 mt-0.5 mb-2 md:text-sm md:mb-4 md:text-center"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+              <a href="#" class="btn">Tambah ke keranjang</a>
             </div>
           </div>
-          <!-- section card clear-->
         </div>
       </section>
     </main>
