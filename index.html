@@ -12,10 +12,12 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-slate-100 font-[Poppins,sans-serif]">
+  <body
+    class="bg-slate-100 font-[Poppins,sans-serif] dark:bg-slate-900 transision-all duration-300"
+  >
     <!-- Header -->
     <header
-      class="flex items-center justify-between bg-white px-6 py-4 shadow-md md:px-12 lg:px-16"
+      class="fixed left-0 right-0 top-0 flex items-center justify-between bg-white px-6 py-4 shadow-md md:px-12 lg:px-16 dark:bg-slate-700 dark:text-white dark:shadow-slate-500"
     >
       <h1 class="text-2xl font-bold md:text-3xl lg:text-4xl">
         Food<span class="text-amber-500">.</span>
@@ -23,7 +25,9 @@
 
       <nav class="hidden gap-6 text-base font-medium md:flex md:text-lg">
         <a href="#" class="hover:text-amber-500 transition-colors">Home</a>
-        <a href="#" class="hover:text-amber-500 transition-colors">Tentang Kami</a>
+        <a href="#" class="hover:text-amber-500 transition-colors"
+          >Tentang Kami</a
+        >
         <a href="#" class="hover:text-amber-500 transition-colors">Menu</a>
         <a href="#" class="hover:text-amber-500 transition-colors">Layanan</a>
       </nav>
@@ -34,23 +38,31 @@
           alt="user image"
           class="w-8 md:w-10"
         />
-        <a href="#" class="btn">Pesan Now</a>
+        <button
+          id="themeToggle"
+          class="flex h-10 w-10 items-center justify-center text-xl text-slate-700 dark:text-yellow-400 dark:bg-slate-700"
+        >
+          <span id="moonIcon">🌙</span>
+          <span id="sunIcon" class="hidden">🔆</span>
+        </button>
       </div>
     </header>
 
     <!-- Main Content -->
-    <main class="mx-6 my-10 md:mx-12 lg:mx-20 lg:my-16">
+    <main class="mx-6 my-10 pt-30 md:mx-12 lg:mx-20 lg:my-16">
       <!-- Hero Section -->
       <section
-        class="mb-16 flex flex-col-reverse items-center justify-between gap-8 md:flex-row md:gap-10 lg:gap-16"
+        class="mb-30 mx-auto flex flex-col-reverse items-center justify-between gap-8 md:flex-row md:gap-10 lg:gap-10 max-w-[1200px]"
       >
         <div class="w-full text-center md:w-1/2 md:text-left">
           <h1
-            class="text-2xl font-extrabold leading-tight text-slate-900 sm:text-3xl md:text-3xl lg:text-5xl"
+            class="text-2xl font-extrabold leading-tight text-slate-900 sm:text-3xl md:text-3xl lg:text-5xl dark:text-white"
           >
             Nikmati Kelezatan Kuliner Terbaik
           </h1>
-          <p class="mt-3 text-xs text-slate-600 md:text-sm lg:text-base">
+          <p
+            class="mt-3 text-xs text-slate-600 md:text-sm lg:text-base dark:text-slate-300"
+          >
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
             libero quam, adipisci minima voluptatum saepe optio ea natus quaerat
             beatae!
@@ -61,15 +73,15 @@
           <img
             src="https://www.svgrepo.com/show/384670/account-avatar-profile-user.svg"
             alt="user avatar"
-            class="w-28 rounded-full max-w-xs md:w-64 lg:w-full"
+            class="w-28 rounded-full max-w-xs md:w-64 lg:w-fullbg-white"
           />
         </div>
       </section>
 
       <!-- Menu Section -->
-      <section>
+      <section class="flex items-center justify-center my-20">
         <div
-          class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-8"
+          class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-20 max-w-[1200px]"
         >
           <!-- Card 1 -->
           <div class="card">
@@ -86,7 +98,7 @@
                   class="flex flex-col xs:flex-row xs:items-baseline xs:justify-between md:flex-col md:items-center lg:items-start"
                 >
                   <h2
-                    class="truncate text-base font-bold text-slate-900 md:text-xl"
+                    class="truncate text-base font-bold text-slate-900 md:text-xl dark:text-white"
                   >
                     Burger Beef
                   </h2>
@@ -111,12 +123,14 @@
               alt="Spaggeti image"
               class="h-20 w-20 min-w-20 rounded-2xl object-cover md:h-48 md:w-full"
             />
-            <div class="flex flex-1 min-w-0 flex-col justify-between self-stretch">
+            <div
+              class="flex flex-1 min-w-0 flex-col justify-between self-stretch"
+            >
               <div>
                 <div
                   class="flex flex-col xs:flex-row xs:items-baseline xs:justify-between md:flex-col md:items-center lg:items-start"
                 >
-                  <h2 class="text-base font-bold text-slate-900 md:text-xl">
+                  <h2 class="text-base font-bold text-slate-900 md:text-xl dark:text-white">
                     Spaggeti
                   </h2>
                   <p class="text-sm font-bold text-amber-500 md:text-lg">
@@ -129,7 +143,7 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing.
                 </p>
               </div>
-              <a href="#" class="btn ">Tambah ke keranjang</a>
+              <a href="#" class="btn">Tambah ke keranjang</a>
             </div>
           </div>
 
@@ -148,7 +162,7 @@
                   class="flex flex-col xs:flex-row xs:items-baseline xs:justify-between md:flex-col md:items-center lg:items-start"
                 >
                   <h2
-                    class="truncate text-base font-bold text-slate-900 md:text-xl"
+                    class="truncate text-base font-bold text-slate-900 md:text-xl dark:text-white"
                   >
                     Burger Beef
                   </h2>
@@ -170,8 +184,37 @@
     </main>
 
     <!-- Footer -->
-    <footer class="mt-16 w-full bg-slate-50 py-7">
-      <p class="text-center text-sm text-slate-600">Copyright &copy; 2026 Hilmi</p>
+    <footer class="mt-16 w-full bg-slate-50 py-7 dark:bg-slate-700">
+      <p class="text-center text-sm text-slate-600 dark:text-white">
+        Copyright &copy; 2026 Hilmi
+      </p>
     </footer>
+    <script>
+      const themeToggle = document.getElementById("themeToggle");
+      const moonIcon = document.getElementById("moonIcon");
+      const sunIcon = document.getElementById("sunIcon");
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+      themeToggle.addEventListener("click", () => {
+        // Check if dark mode class is already present
+        if (document.documentElement.classList.contains("dark")) {
+          document.documentElement.classList.remove("dark");
+          localStorage.theme = "light";
+        } else {
+          document.documentElement.classList.add("dark");
+          localStorage.theme = "dark";
+        }
+        const isDark = document.documentElement.classList.contains("dark");
+        moonIcon.classList.toggle("hidden", isDark);
+        sunIcon.classList.toggle("hidden", !isDark);
+      });
+    </script>
   </body>
 </html>
