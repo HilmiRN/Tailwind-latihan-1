@@ -13,14 +13,13 @@
     --color-yellow-400: oklch(85.2% 0.199 91.936);
     --color-slate-50: oklch(98.4% 0.003 247.858);
     --color-slate-100: oklch(96.8% 0.007 247.896);
-    --color-slate-200: oklch(92.9% 0.013 255.508);
     --color-slate-300: oklch(86.9% 0.022 252.894);
     --color-slate-400: oklch(70.4% 0.04 256.788);
     --color-slate-500: oklch(55.4% 0.046 257.417);
     --color-slate-600: oklch(44.6% 0.043 257.281);
     --color-slate-700: oklch(37.2% 0.044 257.287);
     --color-slate-900: oklch(20.8% 0.042 265.755);
-    --color-gray-700: oklch(37.3% 0.034 259.733);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-xs: 20rem;
@@ -261,6 +260,9 @@
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
@@ -411,6 +413,9 @@
   .text-amber-500 {
     color: var(--color-amber-500);
   }
+  .text-black {
+    color: var(--color-black);
+  }
   .text-slate-500 {
     color: var(--color-slate-500);
   }
@@ -422,6 +427,9 @@
   }
   .text-slate-900 {
     color: var(--color-slate-900);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .underline {
     text-decoration-line: underline;
@@ -467,11 +475,17 @@
     .md\:w-1\/2 {
       width: calc(1 / 2 * 100%);
     }
+    .md\:w-8 {
+      width: calc(var(--spacing) * 8);
+    }
     .md\:w-10 {
       width: calc(var(--spacing) * 10);
     }
     .md\:w-64 {
       width: calc(var(--spacing) * 64);
+    }
+    .md\:w-\[1000px\] {
+      width: 1000px;
     }
     .md\:w-full {
       width: 100%;
@@ -572,15 +586,6 @@
   }
   .dark\:text-slate-400:where(.dark, .dark *) {
     color: var(--color-slate-400);
-  }
-  .dark\:text-slate-500:where(.dark, .dark *) {
-    color: var(--color-slate-500);
-  }
-  .dark\:text-slate-600:where(.dark, .dark *) {
-    color: var(--color-slate-600);
-  }
-  .dark\:text-slate-700:where(.dark, .dark *) {
-    color: var(--color-slate-700);
   }
   .dark\:text-white:where(.dark, .dark *) {
     color: var(--color-white);

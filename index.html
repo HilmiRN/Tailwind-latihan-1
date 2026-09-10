@@ -33,11 +33,18 @@
       </nav>
 
       <div class="flex items-center gap-3">
-        <img
-          src="./src/assets/user-image.svg"
-          alt="user image"
-          class="w-8 md:w-10"
-        />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-8 md:w-10 text-black dark:text-white"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+          <path
+            fill-rule="evenodd"
+            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+          />
+        </svg>
         <button
           id="themeToggle"
           class="flex h-10 w-10 items-center justify-center text-xl text-slate-700 dark:text-yellow-400 dark:bg-slate-700"
@@ -119,7 +126,8 @@
           <!-- Card 2 -->
           <div class="card">
             <img
-              src="https://images.unsplash.com/photo-1598866594230-a7c12756260f?q=80&w=1008&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://images.unsplash.com/photo-1598866594230-a7c12756260f?q=80&w=1008&auto=format&fit=crop&ixlib=rb-
+              4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Spaggeti image"
               class="h-20 w-20 min-w-20 rounded-2xl object-cover md:h-48 md:w-full"
             />
@@ -130,7 +138,9 @@
                 <div
                   class="flex flex-col xs:flex-row xs:items-baseline xs:justify-between md:flex-col md:items-center lg:items-start"
                 >
-                  <h2 class="text-base font-bold text-slate-900 md:text-xl dark:text-white">
+                  <h2
+                    class="text-base font-bold text-slate-900 md:text-xl dark:text-white"
+                  >
                     Spaggeti
                   </h2>
                   <p class="text-sm font-bold text-amber-500 md:text-lg">
@@ -212,8 +222,8 @@
           localStorage.theme = "dark";
         }
         const isDark = document.documentElement.classList.contains("dark");
-        moonIcon.classList.toggle("hidden", isDark);
-        sunIcon.classList.toggle("hidden", !isDark);
+        moonIcon.classList.toggle("hidden", !isDark);
+        sunIcon.classList.toggle("hidden", isDark);
       });
     </script>
   </body>
